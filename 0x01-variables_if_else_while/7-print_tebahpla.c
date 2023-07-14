@@ -10,11 +10,17 @@
 
 int main(void)
 {
-	char low;
+	char low, e, q;
+
+	e = 'e';
+	q = 'q';
 
 	for (low = 'z'; low >= 'a'; low--)
-		putchar(low);
-		putchar('\n');
+	{
+		if (low != e && low != q)
+			putchar(low);
+	}
+	putchar('\n');
 
 	return (0);
 }
