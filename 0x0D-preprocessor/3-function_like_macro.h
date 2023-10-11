@@ -1,4 +1,6 @@
-#ifndef abs_h
-#define abs_h
-#define ABS(x) (x > 0 ? x : x * -1)
+#ifndef HEADER_FILE
+#define HEADER_FILE
+
+#define ABS(x) ((x < 0) ? (-x) : (x))
+
 #endif
